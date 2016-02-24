@@ -1,11 +1,12 @@
+var mainNumber;
 
 $(document).ready(function(){
 
 	/*--- Start a New Game ---*/
-	function newgame(){
-		Math.floor((Math.random() * 100) + 1);
+	function newGame(){
+			mainNumber = Math.floor((Math.random() * 100) + 1);
 
-	};
+	}
 
 	/*--- Display information modal box ---*/
   	$(".what").click(function(){
