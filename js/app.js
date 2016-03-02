@@ -13,7 +13,6 @@ $(document).ready(function(){
 
 /*----Response for user input---*/
 
-
 // function logGuessList (){
 // 	$('#guesslist').append("<li>" + userGuess + "</li>");
 // };
@@ -21,8 +20,9 @@ var countArray = 1;
 
 function response(){
 	var userGuess = $('#userGuess').val();
+			$('#userGuess').val('');
 
-	if (isNaN(userGuess)) {
+	if (isNaN(userGuess) || userGuess === '') {
 			alert("That's not a number, please enter a number");
 			return false;
 	}
