@@ -5,17 +5,23 @@ $(document).ready(function(){
 	/*--- Start a New Game ---*/
 	function newGame(){
 			mysteryNumber = Math.floor((Math.random() * 100) + 1);
+			$('#guessList').empty();
+			$('#count').text(0);
+			$('#feedback').text('Make your Guess!');
+
+
 			console.log(mysteryNumber);
 			//use preventDefault at some point
 
 	}
+
 	newGame();
+
+$('.new').click(newGame);
+
 
 /*----Response for user input---*/
 
-// function logGuessList (){
-// 	$('#guesslist').append("<li>" + userGuess + "</li>");
-// };
 var countArray = 1;
 
 function response(){
